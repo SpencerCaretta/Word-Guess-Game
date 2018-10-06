@@ -9,7 +9,7 @@ header {
 
 }
 
-.directions, .wins, .currentWord, .underscores, .guessesRemaining, .incorrectLetters {
+.directions, .wins, .currentWord, .rightLetter, .guessesRemaining, .wrongLetter, h2 {
     font-size: 20px;
     text-align: center;
     margin: auto;
@@ -19,5 +19,16 @@ header {
     border: 5px solid blue;
 }
 
+#new-game-button {
+    outline: none;
+    border: none;
+    cursor: pointer;
+    display: block;
+    background-color: white;
+    font-size: 22px;
+    color: black;
+    padding: 20px;
+    text-align: center;
+    margin: auto;
 
-
+}

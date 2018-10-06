@@ -7,36 +7,51 @@
         <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
         <!--Styling-->
         <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-        <!--Making that game function real nice-->
-        <script src="assets/javascript/game.js"></script>
-        <title>The Best Game You've Ever Played</title>
+        
+        <title>Basic Hangman Game</title>
     </head>
 
     <body>
         <!--Header describing our theme-->
         <header>Cartoon Hangman</header>
+        <button id = "new-game-button">Click Here to Start a New Game</button>
         
-        <!--Player directions-->
-        <div class="directions">Press any key to get started!</div>
-        
-        <!--Displays # of Player Wins-->
-        <div class="wins">Wins</div>
-        
-        <!--Header for our current word-->
-        <div class="currentWord">Current Word</div>
-        
-        <!--The underscore section where the player will see their correct guesses pop up-->
-        <div class="underscores">_ _ _ _</div>
-        
-        <!--Section telling the player how many guesses they have left-->
-        <div class="guessesRemaining">Number of Guesses Remaining</div>
-        
-        <!--Sectiong showing the players which letters they have guessed wrong-->
-        <div class = incorrectLetters>Letters Already Guessed</div>
+        <div id="reset">
+            
+            <!--Player directions-->
+            <h2>Press any key to get started!</h2>
+            
+            <!--Displays # of Player Wins-->
+            <h2>Player Wins: 
+                <span id = "wins">0</span>
+            </h2>
+            
+            <!--Header for our current word-->
+            <h2>Current Word</h2>
+            
+            <!--The underscore section where the player will see their correct guesses pop up-->
+            <h2>Fill in the Blanks 
+                <span id= "placeholders">_ _ _ _</div>
+            </h2>
+            
+            <!--Section telling the player how many guesses they have left-->
+            <h2>Number of Guesses Remaining: 
+                <span id = "guessesLeft">0</span>
+            </h2>
+            
+            
+            <!--Sectiong showing the players which letters they have guessed wrong-->
+            <h2>Letters Already Guessed 
+                <br/>
+                <span id = "guessed-letters"></span>
+            </h2>
+            
 
-        
+        </div>
 
     </body>
 
-
+    <!--Making that game function real nice-->
+    <script src="assets/javascript/game.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
 </html>
